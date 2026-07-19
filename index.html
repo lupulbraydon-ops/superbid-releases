@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SuperBid — Heavy-Civil Estimating for Windows</title>
+<meta name="description" content="SuperBid is a Windows desktop estimating app for heavy-civil contractors: schedule-driven cost trees, crews and equipment build-ups, quote leveling, bid pricing to the penny, AI takeoff and pre-bid analysis. Free 30-day trial.">
+<meta property="og:title" content="SuperBid — Heavy-Civil Estimating for Windows">
+<meta property="og:description" content="Build the estimate from the owner's schedule, price it to the penny, level your quotes, and print a proposal — all offline, all in one file. Free 30-day trial.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://superbid.ca/">
+<meta property="og:image" content="https://superbid.ca/assets/overview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://superbid.ca/">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="#top" aria-label="SuperBid home">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-name">SUPERBID</span>
+    </a>
+    <nav class="topnav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#ai">AI Tools</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-red btn-small" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download>Download trial</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Heavy-civil estimating, without the heavyweight price&nbsp;tag.</h1>
+        <p class="hero-sub">SuperBid is a Windows desktop app for civil contractors who bid unit-price work.
+        Build the estimate from the owner's schedule, price it to the penny, level your quotes,
+        and print a proposal — all in one file that never leaves your machine.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download>
+            Download free 30-day trial
+          </a>
+          <span class="hero-version" data-version>for Windows 10/11 (64-bit)</span>
+        </div>
+        <ul class="trust-strip">
+          <li>Works fully offline</li>
+          <li>Your data stays on your machine</li>
+          <li>Every feature included in the trial</li>
+        </ul>
+      </div>
+      <figure class="hero-shot">
+        <img src="assets/overview.png" alt="SuperBid Overview dashboard showing bid KPIs, cost composition and price build-up for an open estimate" width="1400" height="800" loading="eager">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ Features ============ -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>The whole bid, one window</h2>
+      <p class="section-sub">SuperBid follows the workflow you already use: schedule in, costs built up, markups applied, proposal out.</p>
+
+      <div class="feature-row">
+        <figure><img src="assets/estimate.png" alt="SuperBid Estimate screen: hierarchical cost item tree with crews, productivity factors and computed totals" loading="lazy" width="1400" height="800"></figure>
+        <div class="feature-copy">
+          <h3>Schedule-driven estimating</h3>
+          <p>Import the owner's pay items from Excel or DOT .COL files — or straight from the tender PDF
+          with the optional AI import — and the cost tree builds itself; you add the detail. Six cost methods, nine productivity factor types, crew-hour math,
+          and labor &amp; equipment rate build-ups (including USACE-style equipment costing).
+          Every edit recalculates instantly, spreadsheet-style, and undo survives closing the file.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <figure><img src="assets/bidsummary.png" alt="SuperBid Bid Summary screen: markup chain, bond and profit settings, price spread across pay items" loading="lazy" width="1400" height="800"></figure>
+        <div class="feature-copy">
+          <h3>Pricing that foots to the penny</h3>
+          <p>A full markup chain — indirects, overhead, profit, contingency, bid-day adjustment, and a
+          bond gross-up that keeps the bond an exact percentage of the final price. The spread engine
+          distributes it across pay items with locks, exclusions, rounding bands, and penny-balancing,
+          so the extended total always equals your target. Need to hit a number? "Set bid to $X" solves
+          the adjustment for you.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <figure><img src="assets/quotes.png" alt="SuperBid Quotes screen: vendor quote comparison grid with low-bid highlighting and awarded vendor" loading="lazy" width="1400" height="800"></figure>
+        <div class="feature-copy">
+          <h3>Quote leveling and awards</h3>
+          <p>Collect vendor quotes side by side, with substitutes filled from the next-best source so you
+          compare complete numbers. Award a quote and the price flows straight into your costs —
+          one undo reverses the whole award. Low bids highlight themselves; per-vendor leveled totals
+          keep everyone honest.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <figure><img src="assets/proposal.png" alt="SuperBid Proposal screen: inline print preview of the bid proposal with numbered terms and conditions" loading="lazy" width="1400" height="800"></figure>
+        <div class="feature-copy">
+          <h3>Proposals and reports</h3>
+          <p>A print-ready bid proposal with your terms &amp; conditions, plus bid summary, cost item detail,
+          crew analysis, quote summary, benchmark, and audit trail reports — on screen or as PDF.
+          Export the whole estimate to Excel, write unit prices back into DOT .COL files byte-for-byte,
+          and pull a job-cost budget for accounting.</p>
+        </div>
+      </div>
+
+      <div class="capability-grid">
+        <div class="cap"><h4>Parametric assemblies</h4><p>Pipe trench, flatwork and your own formulas — answer a few inputs and the item tree expands, linked live for re-pricing.</p></div>
+        <div class="cap"><h4>Change orders</h4><p>Lockable estimate blocks with their own markup. The base bid provably never moves when a CO is added, priced, or rejected.</p></div>
+        <div class="cap"><h4>Estimate Check</h4><p>A pre-bid wizard runs 14 deterministic checks — unassigned costs, qty gaps, missing bond, locks below cost — with jump-to-fix links.</p></div>
+        <div class="cap"><h4>Cost history</h4><p>Capture every bid to a history file and benchmark new work against your own low/avg/high — or against market bid-tab files.</p></div>
+        <div class="cap"><h4>Cross-session undo</h4><p>The undo stack lives in the estimate file. Close it, reopen next week, and Ctrl+Z still works.</p></div>
+        <div class="cap"><h4>One file per bid</h4><p>An estimate is a single .sbid file on your disk. Copy it, email it, archive it — no server, no subscription lock-in.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI ============ -->
+  <section id="ai" class="section section-dark">
+    <div class="container">
+      <h2>AI where it helps. You stay in charge.</h2>
+      <p class="section-sub">Connect your own AI provider account (Anthropic or OpenAI) in Setup. Every AI result lands in a
+      review grid first — nothing enters your estimate until you check it, and quantities are flagged
+      by source and confidence.</p>
+      <div class="ai-grid">
+        <figure class="ai-card">
+          <img src="assets/aitakeoff.png" alt="SuperBid AI Takeoff screen: quantities transcribed from PDF drawings in a review grid with confidence colouring" loading="lazy" width="1400" height="800">
+          <figcaption><h3>AI Takeoff</h3>
+          <p>Feed it the drawing set PDF. It reads labelled quantities — never guesses by eye — and flags
+          each row owner-stated, derived, or assumed. Check the rows you trust and import them as
+          forecast quantities.</p></figcaption>
+        </figure>
+        <figure class="ai-card">
+          <img src="assets/prebid.png" alt="SuperBid AI PreBid screen: tender analysis summary cards with risk rating and schedule join" loading="lazy" width="1400" height="800">
+          <figcaption><h3>AI PreBid Analysis</h3>
+          <p>Point it at the tender documents and get a structured read: scope, risks, key dates,
+          addenda flags, and a schedule that joins against your open estimate — exportable to Excel
+          for the go/no-go meeting.</p></figcaption>
+        </figure>
+        <figure class="ai-card">
+          <img src="assets/scraper.png" alt="SuperBid Bid Scraper screen: scanned tender listings scored by fit with triage status column" loading="lazy" width="1400" height="800">
+          <figcaption><h3>Bid Scraper</h3>
+          <p>Scan a tender board page and triage the results in one grid — scored 0–3 against your work
+          types and region, with status notes that persist between scans. Start an estimate from a
+          listing in one click.</p></figcaption>
+        </figure>
+      </div>
+      <p class="ai-note">AI features are optional and off until you add a provider key. AI output is a starting point,
+      not an answer — a qualified estimator reviews everything before it goes in a bid.</p>
+    </div>
+  </section>
+
+  <!-- ============ Pricing ============ -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Simple licensing</h2>
+      <p class="section-sub">No subscription required. No server. A license belongs to a computer, not to a login.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Free trial</h3>
+          <p class="price-line">30 days</p>
+          <ul>
+            <li>Every feature, no limits</li>
+            <li>No account, no credit card</li>
+            <li>Your estimates stay yours after the trial — files always reopen once licensed</li>
+          </ul>
+          <a class="btn btn-outline" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download>Download the trial</a>
+        </div>
+        <div class="price-card price-card-main">
+          <h3>Per-computer license</h3>
+          <p class="price-line">Email for pricing</p>
+          <ul>
+            <li>Perpetual license for one computer</li>
+            <li>Includes updates via the built-in updater</li>
+            <li>Activation is offline — a signed key, no phoning home</li>
+            <li>Moving to a new PC? Email for a replacement key</li>
+          </ul>
+          <a class="btn btn-red" href="mailto:sales@superbid.ca?subject=SuperBid%20license">sales@superbid.ca</a>
+        </div>
+      </div>
+      <ol class="buy-steps">
+        <li><strong>Install the trial</strong> and use it on real bids for up to 30 days.</li>
+        <li><strong>Email your machine ID</strong> — it's shown under Setup ▸ License key… in the app.</li>
+        <li><strong>Paste the key you get back.</strong> Done — that computer is licensed.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section section-alt">
+    <div class="container container-narrow">
+      <h2>Questions contractors ask</h2>
+      <details>
+        <summary>Does it need an internet connection?</summary>
+        <p>No. Estimating, pricing, quotes, and reports are fully offline — job-trailer friendly. On launch
+        the app checks the public release feed for a newer version (nothing about you or your estimates is
+        sent, and downloads only happen when you click the update button). The optional AI tools and
+        tender-board scans use the internet when you run them.</p>
+      </details>
+      <details>
+        <summary>Where is my data stored?</summary>
+        <p>On your disk. Each estimate is a single .sbid file (an open, self-contained database file);
+        libraries and history are files too. There is no cloud account, and nothing you create is uploaded
+        anywhere — unless you run the optional AI tools, which send only the documents you choose to your
+        own AI provider account.</p>
+      </details>
+      <details>
+        <summary>What happens when the trial ends?</summary>
+        <p>The app asks for a license key at startup. Your files are untouched, and they open again the
+        moment a key is entered. Nothing is deleted, ever.</p>
+      </details>
+      <details>
+        <summary>What do the AI features cost?</summary>
+        <p>They run on your own AI provider account (Anthropic or OpenAI) using your API key, so you pay the
+        provider directly for what you use — typically cents per document. Without a key, the AI screens
+        simply stay off; everything else works.</p>
+      </details>
+      <details>
+        <summary>Can I move my license to a new computer?</summary>
+        <p>Yes — licenses are per-computer, so email your new machine ID to
+        <a href="mailto:support@superbid.ca">support@superbid.ca</a> and you'll get a replacement key.</p>
+      </details>
+      <details>
+        <summary>What does it run on?</summary>
+        <p>Windows 10 or 11, 64-bit. It's a single self-contained download — no installer chain,
+        no runtimes to hunt down. Unzip and run.</p>
+      </details>
+      <details>
+        <summary>Can it read my DOT's bid files?</summary>
+        <p>SuperBid round-trips fixed-column .COL proposal files (import the schedule, write your unit
+        prices back into the same file byte-for-byte) and imports pay items from Excel; the optional AI
+        import reads them from tender PDFs. For agencies using AASHTOWare .ebsx, convert to .COL in
+        AASHTOWare first.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-mark brand-mark-small" aria-hidden="true">S</span>
+      <span>SuperBid — heavy-civil estimating for Windows</span>
+    </div>
+    <nav aria-label="Footer">
+      <a href="eula.html">License agreement</a>
+      <a href="mailto:info@superbid.ca">Contact</a>
+      <a href="mailto:support@superbid.ca">Support</a>
+      <a href="https://github.com/lupulbraydon-ops/superbid-releases/releases" rel="noopener">All releases</a>
+    </nav>
+  </div>
+  <div class="container footer-fine">
+    <p>© 2026 Braydon Lupul. SuperBid is independent software and is not affiliated with or endorsed by any other estimating software vendor.
+    Estimates, bids, and proposals remain your responsibility — see the license agreement.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
