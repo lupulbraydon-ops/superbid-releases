@@ -146,6 +146,7 @@ h2 { font-size: 32px; margin-bottom: 8px; }
 .price-card-main { border-color: var(--red); border-width: 2px; }
 .price-card h3 { font-size: 18px; }
 .price-line { font-size: 26px; font-weight: 700; margin: 6px 0 14px; }
+.price-per { font-size: 14px; font-weight: 600; color: var(--text-2); }
 .price-card ul { list-style: none; margin-bottom: 22px; flex: 1; }
 .price-card li { padding-left: 22px; position: relative; margin-bottom: 9px; color: var(--text-2); font-size: 14px; }
 .price-card li::before { content: "✓"; position: absolute; left: 0; color: var(--red); font-weight: 700; }
