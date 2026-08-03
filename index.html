@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SuperBid — Heavy-Civil Estimating for Windows</title>
-<meta name="description" content="SuperBid is a Windows desktop estimating app for heavy-civil contractors: schedule-driven cost trees, crews and equipment build-ups, quote leveling, bid pricing to the penny, AI takeoff and pre-bid analysis. Free 30-day trial.">
-<meta property="og:title" content="SuperBid — Heavy-Civil Estimating for Windows">
-<meta property="og:description" content="Build the estimate from the owner's schedule, price it to the penny, level your quotes, and print a proposal — all offline, all in one file. Free 30-day trial.">
+<title>SuperBid &amp; SuperJob — Estimating and Job Management for Heavy Civil</title>
+<meta name="description" content="Two Windows desktop apps for heavy-civil contractors. SuperBid: schedule-driven estimating, quote leveling, bid pricing to the penny. SuperJob: run the job you won — daily logs, progress billing, and a traffic accommodation plan builder that draws over aerial imagery and exports a permit-ready plan sheet. Both in active beta, updated weekly.">
+<meta property="og:title" content="SuperBid &amp; SuperJob — Estimating and Job Management for Heavy Civil">
+<meta property="og:description" content="Bid it with SuperBid, run it with SuperJob — including traffic accommodation plans drawn over aerial imagery and exported as a permit-ready plan sheet. Both in active beta, updated weekly.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://superbid.ca/">
 <meta property="og:image" content="https://superbid.ca/assets/overview.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://superbid.ca/">
 <link rel="icon" href="assets/favicon.ico">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -24,14 +24,25 @@
       <span class="brand-name">SUPERBID</span>
     </a>
     <nav class="topnav" aria-label="Main">
-      <a href="#features">Features</a>
-      <a href="#ai">AI Tools</a>
+      <a href="#features">SuperBid</a>
+      <a href="#superjob">SuperJob</a>
+      <a href="#traffic">Traffic Plans</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-red btn-small" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download>Download trial</a>
+    <a class="btn btn-red btn-small" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Download trial</a>
   </div>
 </header>
+
+<div class="beta-strip">
+  <div class="container beta-strip-inner">
+    <span class="beta-pill">Beta</span>
+    <p><strong>SuperBid and SuperJob are both in active beta and updated weekly.</strong>
+    Features land fast, every update is free for the licence year, and what you tell us
+    tends to show up in the next build. Found something wrong?
+    <a href="mailto:support@superbid.ca?subject=Beta%20feedback">support@superbid.ca</a>.</p>
+  </div>
+</div>
 
 <main id="top">
 
@@ -39,20 +50,24 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Heavy-civil estimating, without the heavyweight price&nbsp;tag.</h1>
-        <p class="hero-sub">SuperBid is a Windows desktop app for civil contractors who bid unit-price work.
-        Build the estimate from the owner's schedule, price it to the penny, level your quotes,
-        and print a proposal — all in one file that never leaves your machine.</p>
+        <h1>Bid it. Win it. Run it.</h1>
+        <p class="hero-sub">Two Windows desktop apps for civil contractors who bid unit-price work.
+        <strong>SuperBid</strong> builds the estimate from the owner's schedule and prices it to the penny.
+        <strong>SuperJob</strong> runs the job you won — daily logs, progress billing, and traffic
+        accommodation plans drawn straight onto aerial imagery. Both keep everything in one file
+        on your own machine.</p>
         <div class="hero-actions">
-          <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download>
-            Download free 30-day trial
+          <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">
+            Download SuperBid — free 30-day trial
           </a>
-          <span class="hero-version" data-version>for Windows 10/11 (64-bit)</span>
+          <a class="btn btn-ghost btn-big" href="#superjob">See SuperJob &amp; traffic plans →</a>
         </div>
+        <p class="hero-version" data-version="superbid">for Windows 10/11 (64-bit)</p>
         <ul class="trust-strip">
-          <li>Works fully offline</li>
+          <li>Works offline</li>
           <li>Your data stays on your machine</li>
           <li>Every feature included in the trial</li>
+          <li>No subscription, no server</li>
         </ul>
       </div>
       <figure class="hero-shot">
@@ -61,9 +76,10 @@
     </div>
   </section>
 
-  <!-- ============ Features ============ -->
+  <!-- ============ SuperBid features ============ -->
   <section id="features" class="section">
     <div class="container">
+      <span class="eyebrow">SuperBid — estimating</span>
       <h2>The whole bid, one window</h2>
       <p class="section-sub">SuperBid follows the workflow you already use: schedule in, costs built up, markups applied, proposal out.</p>
 
@@ -116,9 +132,142 @@
         <div class="cap"><h4>Parametric assemblies</h4><p>Pipe trench, flatwork and your own formulas — answer a few inputs and the item tree expands, linked live for re-pricing.</p></div>
         <div class="cap"><h4>Change orders</h4><p>Lockable estimate blocks with their own markup. The base bid provably never moves when a CO is added, priced, or rejected.</p></div>
         <div class="cap"><h4>Estimate Check</h4><p>A pre-bid wizard runs 14 deterministic checks — unassigned costs, qty gaps, missing bond, locks below cost — with jump-to-fix links.</p></div>
+        <div class="cap"><h4>Trucking &amp; haul</h4><p>Cycle-time haul calculator with loader-saturation fleet math, so the truck count comes out of the numbers instead of a guess.</p></div>
         <div class="cap"><h4>Cost history</h4><p>Capture every bid to a history file and benchmark new work against your own low/avg/high — or against market bid-tab files.</p></div>
-        <div class="cap"><h4>Cross-session undo</h4><p>The undo stack lives in the estimate file. Close it, reopen next week, and Ctrl+Z still works.</p></div>
         <div class="cap"><h4>One file per bid</h4><p>An estimate is a single .sbid file on your disk. Copy it, email it, archive it — no server, no subscription lock-in.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SuperJob ============ -->
+  <section id="superjob" class="section section-dark">
+    <div class="container">
+      <span class="eyebrow eyebrow-light">SuperJob — running the work <span class="tag-beta">Beta</span></span>
+      <h2>The bid becomes the job.</h2>
+      <p class="section-sub">Award a SuperBid estimate straight into a job file and the budget is already
+      there — every pay item, every cost code, every crew. Or start from a blank job and paste your
+      schedule out of Excel. From there SuperJob tracks what actually happened: hours, quantities,
+      cost against budget, progress invoices, change events — and, for the crews who need it, the
+      traffic accommodation plan that has to be in the permit package before anyone breaks ground.</p>
+
+      <div class="sj-grid">
+        <div class="sj-card">
+          <h3>Daily log</h3>
+          <p>Crew hours at loaded rates, equipment, weather, notes — a few minutes at the end of the day.
+          Yesterday's crew carries forward so you're editing, not retyping.</p>
+        </div>
+        <div class="sj-card">
+          <h3>Quantities &amp; job cost</h3>
+          <p>Weekly quantities against the budget, unit costs that move as the job moves, and a forecast
+          that tells you where you land — not just where you've been.</p>
+        </div>
+        <div class="sj-card">
+          <h3>Progress billing</h3>
+          <p>Ours-versus-agreed quantities, per-invoice holdback, GST net of holdback, and a proper
+          invoice plus progress estimate written fresh from the Alberta prompt-payment rules.</p>
+        </div>
+        <div class="sj-card">
+          <h3>Change events</h3>
+          <p>Notice-deadline warnings before you miss one, T&amp;M tickets at rates frozen the day the
+          work happened, signature-ready on paper. Approve one and it becomes a billable line.</p>
+        </div>
+        <div class="sj-card">
+          <h3>Actuals feed the next bid</h3>
+          <p>Publish a finished job back to your cost history and your next estimate benchmarks
+          against what your own crews really produced.</p>
+        </div>
+        <div class="sj-card">
+          <h3>Same rules as SuperBid</h3>
+          <p>One .sbjob file per job. Fully offline. Undo that survives closing the file. A locked
+          baseline the day-to-day can never quietly rewrite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Traffic plans — the headline ============ -->
+  <section id="traffic" class="section section-traffic">
+    <div class="container">
+      <span class="eyebrow">SuperJob — traffic accommodation plans</span>
+      <h2>Draw the closure. Print the permit package.</h2>
+      <p class="section-sub">Traffic control plans are usually a separate subscription, a separate app,
+      and a separate person who knows how to drive it. In SuperJob it's a tab on the job you're
+      already running — you point at the road on an aerial photo, type the posted speed, and the
+      layout draws itself.</p>
+
+      <figure class="tap-figure">
+        <img src="assets/tap-plan.svg" alt="Plan view of a lane closure: three advance-warning signs on the shoulder at the A spacing, an electronic arrow board, a merging taper of cones over length L, a buffer B, the hatched work area, and a downstream taper reopening the lane. Dimension lines mark A, L, B and the work length." width="1200" height="470" loading="lazy">
+        <figcaption>Schematic of what the layout engine places from one posted speed. On screen this
+        sits on live aerial imagery of your actual road.</figcaption>
+      </figure>
+
+      <div class="feature-row">
+        <div class="feature-copy">
+          <h3>Speed in, layout out</h3>
+          <p>Set the anchor at the upstream edge of the work area, click the direction traffic travels,
+          and enter the posted speed, work length and which side is closed. SuperJob places the
+          advance-warning signs at the sign spacing, the merging taper, the longitudinal buffer, the
+          run of channelizers down the closed lane, the arrow board at the taper head, and a downstream
+          taper that reopens the lane. The taper length comes from the standard metric MUTCD/MUTCDC
+          formula, and the sheet prints the dimensions it used so a reviewer can check the arithmetic.</p>
+        </div>
+        <div class="feature-copy">
+          <h3>Then move anything</h3>
+          <p>The generator gets you to about 90%. The pinch point, the driveway that has to stay open,
+          the hydrant — you drag those devices where engineering judgement puts them. Every device
+          takes an exact heading in degrees, four sizes, and a rotation you can type. Undo works
+          across the whole thing, and it still works after you close the file and come back tomorrow.</p>
+        </div>
+      </div>
+
+      <div class="tap-highlight">
+        <div class="tap-highlight-copy">
+          <h3>Drag a line of cones</h3>
+          <p>Arm a cone, drum, delineator, barricade or barrier and <strong>drag along the road</strong>.
+          A live preview shows the run and tells you how many devices and what spacing before you let
+          go; hold Shift and the line snaps to 15° so it lays dead parallel to the lane. The spacing you
+          pick is a maximum, never a target — the run tightens to fit rather than leaving one wide gap
+          at the end. The whole run drops in a single undo step.</p>
+        </div>
+        <figure>
+          <img src="assets/superjob-palette.png" alt="The SuperJob traffic-plan toolbar: All signs, and pull-down menus for Signs, Channelizers, Barricades, Barriers and Equipment, with base-map rotation controls and a line-spacing selector" width="982" height="74" loading="lazy">
+          <figcaption>The device palette, with line spacing on the right.</figcaption>
+        </figure>
+      </div>
+
+      <div class="capability-grid">
+        <div class="cap"><h4>551 real sign faces</h4><p>Not clip art. The Alberta Traffic Sign Catalogue plus the public-domain Canadian MUTCDC set, searchable by code or description, and drawn on the plan as the actual regulatory face.</p></div>
+        <div class="cap"><h4>Every device on the truck</h4><p>Cones, drums, delineators, channelizer panels, lane separators, Type I/II/III and A-frame barricades, water and concrete barrier, sand-barrel attenuators, electronic arrow board, message board, portable signals, AFAD, flaggers and TMA.</p></div>
+        <div class="cap"><h4>Aerial imagery</h4><p>Draw on current satellite imagery of the real road — 15–30 cm across Calgary and Edmonton — or flip to a street base map. Rotate the base map to match the road, and the sheet states the rotation.</p></div>
+        <div class="cap"><h4>Permit-ready plan sheet</h4><p>One PDF: the plan view, a device schedule a supplier can fill, the dimensions used, your 24-hour site contact, set-up and removal dates and the permit number.</p></div>
+        <div class="cap"><h4>A plan per closure</h4><p>Stages, detours, a night-work variant — as many plans as the job needs, each remembering its own view. Click one and the map flies to it.</p></div>
+        <div class="cap"><h4>Attached to the job</h4><p>The plans live in the same .sbjob file as the budget, the daily logs and the billings. No separate subscription, no separate file to lose.</p></div>
+      </div>
+
+      <div class="honest-note">
+        <h4>What we won't pretend</h4>
+        <p>The taper length is computed from the published metric MUTCD/MUTCDC formula, which is real
+        traffic-engineering math. The <em>spacing</em> dimensions — how far apart the advance signs go,
+        how long the buffer is, how tight the channelizers sit — ship as sensible defaults interpolated
+        from the ranges the City of Calgary's temporary traffic control manual publishes. They are a
+        starting point, not authenticated regulatory values, and every sheet SuperJob prints says so in
+        as many words. You or your engineer verify the plan against the manual that governs your job
+        before it goes to a permit office. That is true of every tool in this category; we just say it
+        on the drawing.</p>
+      </div>
+
+      <div class="tap-cta">
+        <div>
+          <h3>Try the traffic planner</h3>
+          <p>SuperJob is in beta and free while it is. Download it, open the Traffic Plans tab, and
+          draw your next closure.</p>
+        </div>
+        <div class="tap-cta-actions">
+          <a class="btn btn-red btn-big" data-download="superjob" data-pending
+             data-live-label="Download SuperJob beta"
+             href="mailto:sales@superbid.ca?subject=SuperJob%20beta%20access">Join the SuperJob beta</a>
+          <span class="hero-version" data-version="superjob">beta · Windows 10/11 (64-bit)</span>
+        </div>
       </div>
     </div>
   </section>
@@ -126,6 +275,7 @@
   <!-- ============ AI ============ -->
   <section id="ai" class="section section-dark">
     <div class="container">
+      <span class="eyebrow eyebrow-light">SuperBid — optional AI tools</span>
       <h2>AI where it helps. You stay in charge.</h2>
       <p class="section-sub">Connect your own AI provider account (Anthropic or OpenAI) in Setup. Every AI result lands in a
       review grid first — nothing enters your estimate until you check it, and quantities are flagged
@@ -162,44 +312,49 @@
   <section id="pricing" class="section">
     <div class="container">
       <h2>Simple licensing</h2>
-      <p class="section-sub">No subscription required. No server. A license belongs to a computer, not to a login.</p>
-      <div class="pricing-grid">
+      <p class="section-sub">No subscription required. No server. A licence belongs to a computer, not to a login —
+      and every update during your licence year is included.</p>
+      <div class="pricing-grid pricing-grid-3">
         <div class="price-card">
-          <h3>Free trial</h3>
+          <h3>SuperBid trial</h3>
           <p class="price-line">30 days</p>
           <ul>
             <li>Every feature, no limits</li>
             <li>No account, no credit card</li>
             <li>Your estimates stay yours after the trial — files always reopen once licensed</li>
           </ul>
-          <a class="btn btn-outline" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download>Download the trial</a>
+          <a class="btn btn-outline" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Download the trial</a>
         </div>
         <div class="price-card price-card-main">
-          <h3>Annual license</h3>
+          <h3>SuperBid licence</h3>
           <p class="price-line">$1,200 <span class="price-per">CAD / computer / year</span></p>
           <ul>
-            <li>Every feature and every update for the year</li>
+            <li>Every feature and every weekly update for the year</li>
             <li>Activation is offline — a signed key, no phoning home</li>
             <li>No auto-billing — renewing is a fresh key by email, on your say-so</li>
             <li>Moving to a new PC? Email for a replacement key</li>
           </ul>
           <a class="btn btn-red" href="mailto:sales@superbid.ca?subject=SuperBid%20license">Buy — sales@superbid.ca</a>
         </div>
+        <div class="price-card price-card-beta">
+          <h3>SuperJob <span class="tag-beta">Beta</span></h3>
+          <p class="price-line">Free <span class="price-per">while it's in beta</span></p>
+          <ul>
+            <li>Everything, including the traffic accommodation plan builder</li>
+            <li>Beta licence key on request — no card, no commitment</li>
+            <li>Your jobs stay yours; .sbjob files always reopen</li>
+            <li>After beta: <strong>$1,200 CAD / computer / year</strong>, same as SuperBid</li>
+          </ul>
+          <a class="btn btn-outline" data-download="superjob" data-pending
+             data-live-label="Download SuperJob beta"
+             href="mailto:sales@superbid.ca?subject=SuperJob%20beta%20access">Join the beta</a>
+        </div>
       </div>
       <ol class="buy-steps">
-        <li><strong>Install the trial</strong> and use it on real bids for up to 30 days.</li>
+        <li><strong>Install it</strong> and use it on real work — 30 days for SuperBid, free through the beta for SuperJob.</li>
         <li><strong>Email your machine ID</strong> — it's shown under Setup ▸ License key… in the app.</li>
-        <li><strong>Paste the key you get back.</strong> Done — that computer is licensed for the year.</li>
+        <li><strong>Paste the key you get back.</strong> Done — that computer is licensed.</li>
       </ol>
-    </div>
-  </section>
-
-  <!-- ============ SuperJob teaser ============ -->
-  <section class="teaser" aria-label="Coming soon">
-    <div class="container">
-      <span class="teaser-badge">Coming soon</span>
-      <h2>SuperJob</h2>
-      <p>The next tool in the SuperBid family.</p>
     </div>
   </section>
 
@@ -207,47 +362,101 @@
   <section id="faq" class="section section-alt">
     <div class="container container-narrow">
       <h2>Questions contractors ask</h2>
+
+      <details>
+        <summary>What does "beta" actually mean here?</summary>
+        <p>Both apps are in daily use on real work and ship a new build most weeks. Beta means features
+        are still landing fast and your feedback genuinely changes the next release — not that the
+        software is a toy. SuperBid is a paid product with a 30-day trial; SuperJob is free while its
+        beta runs. Keep backups of anything you'd hate to redo, the same as you would with any tool
+        this new, and tell us when something's wrong.</p>
+      </details>
+
+      <details>
+        <summary>How is SuperJob's traffic planner different from RapidPlan?</summary>
+        <p>Two honest differences. First, it's not a separate purchase or a separate app — the plan
+        lives in the job file next to the budget, the daily logs and the billings. Second, it's
+        deliberately narrower: SuperJob covers the closure types a civil contractor draws over and
+        over (lane closure, shoulder closure, lane shift, detour), rather than every scenario in the
+        book. If you draw traffic plans all day for a living, a dedicated package will still do more.
+        If you draw them because the permit needs one, this is meant to save you the subscription.</p>
+      </details>
+
+      <details>
+        <summary>Are the traffic plan dimensions approved for my jurisdiction?</summary>
+        <p>No, and no software's are. The taper length is the standard published metric MUTCD/MUTCDC
+        formula. The sign spacings, buffer and device spacings ship as defaults interpolated from the
+        ranges the City of Calgary's temporary traffic control manual publishes — a starting point you
+        change to suit. Every plan sheet SuperJob prints carries a line telling the reviewer to verify
+        it against the governing manual, and the sheet shows the dimensions used so they can. The plan
+        is yours, and so is the sign-off.</p>
+      </details>
+
+      <details>
+        <summary>Does the traffic planner need an internet connection?</summary>
+        <p>The aerial base map does — it streams from Esri, and the first time you open the map it also
+        pulls the map library. Everything else about a plan works in a job trailer with no signal:
+        placing devices, editing them, the device schedule, and printing the plan sheet from the last
+        map view you captured. The rest of SuperJob is fully offline.</p>
+      </details>
+
+      <details>
+        <summary>Where does the sign artwork come from?</summary>
+        <p>The Alberta Traffic Sign Catalogue, published as open data by the Government of Alberta, plus
+        the public-domain Canadian MUTCDC and BC temporary sign sets. They're the real regulatory faces
+        as vector art, not redrawn approximations, and every plan sheet carries the licence attribution
+        the open data licence asks for.</p>
+      </details>
+
       <details>
         <summary>Does it need an internet connection?</summary>
-        <p>No. Estimating, pricing, quotes, and reports are fully offline — job-trailer friendly. On launch
-        the app checks the public release feed for a newer version (nothing about you or your estimates is
-        sent, and downloads only happen when you click the update button). The optional AI tools and
-        tender-board scans use the internet when you run them.</p>
+        <p>SuperBid: no. Estimating, pricing, quotes, and reports are fully offline — job-trailer friendly.
+        On launch the app checks the public release feed for a newer version (nothing about you or your
+        estimates is sent, and downloads only happen when you click the update button). The optional AI
+        tools and tender-board scans use the internet when you run them. SuperJob is the same, except
+        for the traffic-plan base map noted above.</p>
       </details>
+
       <details>
         <summary>Where is my data stored?</summary>
-        <p>On your disk. Each estimate is a single .sbid file (an open, self-contained database file);
-        libraries and history are files too. There is no cloud account, and nothing you create is uploaded
-        anywhere — unless you run the optional AI tools, which send only the documents you choose to your
-        own AI provider account.</p>
+        <p>On your disk. Each estimate is a single .sbid file and each job a single .sbjob file (open,
+        self-contained database files); libraries and history are files too. There is no cloud account,
+        and nothing you create is uploaded anywhere — unless you run the optional AI tools, which send
+        only the documents you choose to your own AI provider account.</p>
       </details>
+
       <details>
         <summary>What happens when the trial ends?</summary>
-        <p>The app asks for a license key at startup. Your files are untouched, and they open again the
+        <p>The app asks for a licence key at startup. Your files are untouched, and they open again the
         moment a key is entered. Nothing is deleted, ever.</p>
       </details>
+
       <details>
         <summary>What do the AI features cost?</summary>
         <p>They run on your own AI provider account (Anthropic or OpenAI) using your API key, so you pay the
         provider directly for what you use — typically cents per document. Without a key, the AI screens
         simply stay off; everything else works.</p>
       </details>
+
       <details>
-        <summary>What happens when my license year ends?</summary>
+        <summary>What happens when my licence year ends?</summary>
         <p>The app tells you and asks for a new key — nothing is auto-billed and nothing is deleted.
         Email <a href="mailto:sales@superbid.ca">sales@superbid.ca</a>, get your renewal key, paste it,
-        and keep working. If you choose not to renew, your .sbid files are still your files.</p>
+        and keep working. If you choose not to renew, your files are still your files.</p>
       </details>
+
       <details>
-        <summary>Can I move my license to a new computer?</summary>
-        <p>Yes — licenses are per-computer, so email your new machine ID to
+        <summary>Can I move my licence to a new computer?</summary>
+        <p>Yes — licences are per-computer, so email your new machine ID to
         <a href="mailto:support@superbid.ca">support@superbid.ca</a> and you'll get a replacement key.</p>
       </details>
+
       <details>
         <summary>What does it run on?</summary>
-        <p>Windows 10 or 11, 64-bit. It's a single self-contained download — no installer chain,
+        <p>Windows 10 or 11, 64-bit. Each app is a single self-contained download — no installer chain,
         no runtimes to hunt down. Unzip and run.</p>
       </details>
+
       <details>
         <summary>Can it read my DOT's bid files?</summary>
         <p>SuperBid round-trips fixed-column .COL proposal files (import the schedule, write your unit
@@ -264,21 +473,29 @@
   <div class="container footer-inner">
     <div>
       <span class="brand-mark brand-mark-small" aria-hidden="true">S</span>
-      <span>SuperBid — heavy-civil estimating for Windows</span>
+      <span>SuperBid &amp; SuperJob — estimating and job management for heavy civil</span>
     </div>
     <nav aria-label="Footer">
-      <a href="eula.html">License agreement</a>
+      <a href="eula.html">SuperBid licence</a>
+      <a href="superjob-eula.html">SuperJob licence</a>
       <a href="mailto:info@superbid.ca">Contact</a>
       <a href="mailto:support@superbid.ca">Support</a>
       <a href="https://github.com/lupulbraydon-ops/superbid-releases/releases" rel="noopener">All releases</a>
     </nav>
   </div>
   <div class="container footer-fine">
-    <p>© 2026 Braydon Lupul. SuperBid is independent software and is not affiliated with or endorsed by any other estimating software vendor.
-    Estimates, bids, and proposals remain your responsibility — see the license agreement.</p>
+    <p>© 2026 Braydon Lupul. SuperBid and SuperJob are independent software and are not affiliated with or
+    endorsed by any other estimating or traffic-control software vendor. Estimates, bids, proposals,
+    invoices and traffic accommodation plans remain your responsibility — see the licence agreement.
+    Traffic plan sign artwork contains information licensed under the Open Government Licence – Alberta.
+    Aerial imagery © Esri and its licensors.</p>
   </div>
 </footer>
 
-<script src="site.js"></script>
+<!-- ?v= is load-bearing, not decoration. The old site.js selected on the bare
+     [data-download] attribute, so a returning visitor holding it in cache while
+     getting this newer HTML would have every SuperJob button pointed at SuperBid's
+     zip. Bump this whenever site.js changes. -->
+<script src="site.js?v=2"></script>
 </body>
 </html>
