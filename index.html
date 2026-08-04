@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SuperBid &amp; SuperJob — Estimating and Job Management for Heavy Civil</title>
-<meta name="description" content="Two Windows desktop apps for heavy-civil contractors. SuperBid: schedule-driven estimating, quote leveling, bid pricing to the penny. SuperJob: run the job you won — daily logs, progress billing, and a traffic accommodation plan builder that draws over aerial imagery and exports a permit-ready plan sheet. Both in active beta, updated weekly.">
+<meta name="description" content="Two Windows desktop apps for heavy-civil contractors. SuperBid: schedule-driven estimating, quote leveling, bid pricing to the penny. SuperJob: run the job you won — daily logs, progress billing, and a traffic accommodation plan builder that draws over aerial imagery and exports a permit-ready plan sheet. Both apps are in active beta, updated weekly, and free while the beta runs — $1,200 CAD per computer per year for the pair afterwards.">
 <meta property="og:title" content="SuperBid &amp; SuperJob — Estimating and Job Management for Heavy Civil">
-<meta property="og:description" content="Bid it with SuperBid, run it with SuperJob — including traffic accommodation plans drawn over aerial imagery and exported as a permit-ready plan sheet. Both in active beta, updated weekly.">
+<meta property="og:description" content="Bid it with SuperBid, run it with SuperJob — including traffic accommodation plans drawn over aerial imagery and exported as a permit-ready plan sheet. Both in active beta, updated weekly, and free while the beta runs.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://superbid.ca/">
 <meta property="og:image" content="https://superbid.ca/assets/overview.png">
@@ -30,16 +30,16 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-red btn-small" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Download trial</a>
+    <a class="btn btn-red btn-small" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Free download</a>
   </div>
 </header>
 
 <div class="beta-strip">
   <div class="container beta-strip-inner">
     <span class="beta-pill">Beta</span>
-    <p><strong>SuperBid and SuperJob are both in active beta and updated weekly.</strong>
-    Features land fast, every update is free for the licence year, and what you tell us
-    tends to show up in the next build. Found something wrong?
+    <p><strong>SuperBid and SuperJob are both in active beta, updated weekly, and free
+    while the beta runs.</strong> Features land fast, and what you tell us tends to show up in
+    the next build. Found something wrong?
     <a href="mailto:support@superbid.ca?subject=Beta%20feedback">support@superbid.ca</a>.</p>
   </div>
 </div>
@@ -58,15 +58,19 @@
         on your own machine.</p>
         <div class="hero-actions">
           <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">
-            Download SuperBid — free 30-day trial
+            Download SuperBid — free in beta
           </a>
+          <!-- Deliberately NOT a [data-download] button: this one's job is to take you
+               into the SuperJob section to read about traffic plans. site.js would
+               otherwise rewrite its href to the zip and remove the only path into
+               the content the section exists to sell. -->
           <a class="btn btn-ghost btn-big" href="#superjob">See SuperJob &amp; traffic plans →</a>
         </div>
         <p class="hero-version" data-version="superbid">for Windows 10/11 (64-bit)</p>
         <ul class="trust-strip">
+          <li>Free while in beta</li>
           <li>Works offline</li>
           <li>Your data stays on your machine</li>
-          <li>Every feature included in the trial</li>
           <li>No subscription, no server</li>
         </ul>
       </div>
@@ -79,7 +83,7 @@
   <!-- ============ SuperBid features ============ -->
   <section id="features" class="section">
     <div class="container">
-      <span class="eyebrow">SuperBid — estimating</span>
+      <span class="eyebrow">SuperBid — estimating <span class="tag-beta">Beta</span></span>
       <h2>The whole bid, one window</h2>
       <p class="section-sub">SuperBid follows the workflow you already use: schedule in, costs built up, markups applied, proposal out.</p>
 
@@ -259,8 +263,8 @@
       <div class="tap-cta">
         <div>
           <h3>Try the traffic planner</h3>
-          <p>SuperJob is in beta and free while it is. Download it, open the Traffic Plans tab, and
-          draw your next closure.</p>
+          <p>SuperJob is in beta and free while it is — so is SuperBid. Download it, open the
+          Traffic Plans tab, and draw your next closure.</p>
         </div>
         <div class="tap-cta-actions">
           <a class="btn btn-red btn-big" data-download="superjob" data-pending
@@ -311,49 +315,40 @@
   <!-- ============ Pricing ============ -->
   <section id="pricing" class="section">
     <div class="container">
-      <h2>Simple licensing</h2>
-      <p class="section-sub">No subscription required. No server. A licence belongs to a computer, not to a login —
-      and every update during your licence year is included.</p>
-      <div class="pricing-grid pricing-grid-3">
-        <div class="price-card">
-          <h3>SuperBid trial</h3>
-          <p class="price-line">30 days</p>
+      <h2>Free while we're in beta</h2>
+      <p class="section-sub">Both apps are in beta, and both are free for as long as that lasts.
+      No subscription, no server, no account. When they come out of beta, one price covers
+      both — a licence belongs to a computer, not to a login, and every update in your
+      licence year is included.</p>
+      <div class="pricing-grid">
+        <div class="price-card price-card-beta">
+          <h3>Right now <span class="tag-beta">Beta</span></h3>
+          <p class="price-line">Free <span class="price-per">both apps, every feature</span></p>
           <ul>
-            <li>Every feature, no limits</li>
-            <li>No account, no credit card</li>
-            <li>Your estimates stay yours after the trial — files always reopen once licensed</li>
+            <li>SuperBid <em>and</em> SuperJob — including the traffic accommodation plan builder</li>
+            <li>No credit card, no account, nothing to cancel</li>
+            <li>Installing starts a 30-day trial; email once for free beta keys and both keep running</li>
+            <li>Your files stay yours — .sbid and .sbjob always reopen</li>
           </ul>
-          <a class="btn btn-outline" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Download the trial</a>
+          <a class="btn btn-red" href="mailto:sales@superbid.ca?subject=Beta%20licence%20key">Get a free beta key</a>
         </div>
         <div class="price-card price-card-main">
-          <h3>SuperBid licence</h3>
-          <p class="price-line">$1,200 <span class="price-per">CAD / computer / year</span></p>
+          <h3>When beta ends</h3>
+          <p class="price-line">$1,200 <span class="price-per">CAD / computer / year — both apps</span></p>
           <ul>
-            <li>Every feature and every weekly update for the year</li>
+            <li>One price, both apps: estimating and running the job. A key for each, issued against the same machine ID.</li>
             <li>Activation is offline — a signed key, no phoning home</li>
             <li>No auto-billing — renewing is a fresh key by email, on your say-so</li>
             <li>Moving to a new PC? Email for a replacement key</li>
+            <li>Already bought SuperBid? Your year gets extended through the beta.</li>
           </ul>
-          <a class="btn btn-red" href="mailto:sales@superbid.ca?subject=SuperBid%20license">Buy — sales@superbid.ca</a>
-        </div>
-        <div class="price-card price-card-beta">
-          <h3>SuperJob <span class="tag-beta">Beta</span></h3>
-          <p class="price-line">Free <span class="price-per">while it's in beta</span></p>
-          <ul>
-            <li>Everything, including the traffic accommodation plan builder</li>
-            <li>Beta licence key on request — no card, no commitment</li>
-            <li>Your jobs stay yours; .sbjob files always reopen</li>
-            <li>After beta: <strong>$1,200 CAD / computer / year</strong>, same as SuperBid</li>
-          </ul>
-          <a class="btn btn-outline" data-download="superjob" data-pending
-             data-live-label="Download SuperJob beta"
-             href="mailto:sales@superbid.ca?subject=SuperJob%20beta%20access">Join the beta</a>
+          <a class="btn btn-outline" href="mailto:sales@superbid.ca?subject=SuperBid%20%2B%20SuperJob%20pricing">Questions — sales@superbid.ca</a>
         </div>
       </div>
       <ol class="buy-steps">
-        <li><strong>Install it</strong> and use it on real work — 30 days for SuperBid, free through the beta for SuperJob.</li>
-        <li><strong>Email your machine ID</strong> — it's shown under Setup ▸ License key… in the app.</li>
-        <li><strong>Paste the key you get back.</strong> Done — that computer is licensed.</li>
+        <li><strong>Download both</strong> and use them on real work. Installing starts a 30-day trial.</li>
+        <li><strong>Email your machine ID</strong> — it's shown under Setup ▸ License key… and is the same in both apps.</li>
+        <li><strong>Paste the keys you get back</strong> — one per app. Free, and they run to the end of the beta.</li>
       </ol>
     </div>
   </section>
@@ -367,9 +362,26 @@
         <summary>What does "beta" actually mean here?</summary>
         <p>Both apps are in daily use on real work and ship a new build most weeks. Beta means features
         are still landing fast and your feedback genuinely changes the next release — not that the
-        software is a toy. SuperBid is a paid product with a 30-day trial; SuperJob is free while its
-        beta runs. Keep backups of anything you'd hate to redo, the same as you would with any tool
-        this new, and tell us when something's wrong.</p>
+        software is a toy. Both are free while the beta runs. Keep backups of anything you'd hate to
+        redo, the same as you would with any tool this new, and tell us when something's wrong.</p>
+      </details>
+
+      <details>
+        <summary>It's free now — what happens when the beta ends?</summary>
+        <p>One price covers both apps: <strong>$1,200 CAD per computer per year</strong> for SuperBid
+        and SuperJob together (they take a key each, issued against the same machine ID). Nothing is auto-billed and nothing switches off without warning — when
+        the beta ends you'll be asked whether you want a licence, and if you don't, your .sbid and
+        .sbjob files are still your files. If you already bought a SuperBid licence, your year is
+        extended through the beta; email <a href="mailto:sales@superbid.ca">sales@superbid.ca</a>.</p>
+      </details>
+
+      <details>
+        <summary>How do I keep using it past 30 days during the beta?</summary>
+        <p>Installing either app starts a 30-day trial. Email
+        <a href="mailto:sales@superbid.ca?subject=Beta%20licence%20key">sales@superbid.ca</a> with the
+        machine ID shown under Setup ▸ License key… and you'll get free beta keys for that computer.
+        It costs nothing and there's nothing to cancel — it just means we know who's testing, so we can
+        tell you when something changes.</p>
       </details>
 
       <details>
@@ -427,8 +439,9 @@
 
       <details>
         <summary>What happens when the trial ends?</summary>
-        <p>The app asks for a licence key at startup. Your files are untouched, and they open again the
-        moment a key is entered. Nothing is deleted, ever.</p>
+        <p>The app asks for a licence key at startup — during the beta that key is free, see above.
+        Your files are untouched, and they open again the moment a key is entered. Nothing is
+        deleted, ever.</p>
       </details>
 
       <details>
@@ -443,6 +456,14 @@
         <p>The app tells you and asks for a new key — nothing is auto-billed and nothing is deleted.
         Email <a href="mailto:sales@superbid.ca">sales@superbid.ca</a>, get your renewal key, paste it,
         and keep working. If you choose not to renew, your files are still your files.</p>
+      </details>
+
+      <details>
+        <summary>Is it one licence per person or per computer?</summary>
+        <p>Per computer. A key is tied to a specific machine, which is what lets activation work
+        offline with no account and no phoning home. If you work on a desktop and a job-site laptop,
+        that's two licences — or email <a href="mailto:sales@superbid.ca">sales@superbid.ca</a> and
+        ask; we'd rather sort it out than have you fighting the software.</p>
       </details>
 
       <details>
