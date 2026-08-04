@@ -83,8 +83,17 @@ h2 { font-size: 32px; margin-bottom: 8px; }
 .hero-inner { display: grid; grid-template-columns: 5fr 6fr; gap: 48px; align-items: center; }
 .hero h1 { font-size: clamp(30px, 3.6vw, 40px); margin-bottom: 18px; max-width: 20ch; }
 .hero-sub { color: var(--text-dim-on-dark); font-size: 17px; margin-bottom: 28px; }
-.hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
-.hero-version { color: var(--text-dim-on-dark); font-size: 13px; margin-bottom: 18px; }
+.hero-actions { display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+/* one column per product: button with its own version line underneath, so two
+   downloads read as two products rather than a primary and an afterthought */
+/* flex:1 with a floor, not natural width: at the hero column's 465 px the two
+   btn-big labels came to 473 px and wrapped to separate rows. Equal halves also
+   read as two products of equal standing rather than a primary and a runner-up. */
+.hero-dl { display: flex; flex-direction: column; gap: 6px; flex: 1 1 190px; }
+.hero-dl .btn { white-space: nowrap; width: 100%; padding-left: 12px; padding-right: 12px; }
+.hero-version { color: var(--text-dim-on-dark); font-size: 13px; }
+.hero-note { color: var(--text-dim-on-dark); font-size: 13.5px; margin-bottom: 18px; }
+.hero-note a { color: #fff; }
 .trust-strip { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
 .trust-strip li { color: var(--text-dim-on-dark); font-size: 13px; }
 .trust-strip li::before { content: "✓ "; color: #6FCF8B; }
@@ -155,6 +164,9 @@ h2 { font-size: 32px; margin-bottom: 8px; }
 .price-card li { padding-left: 22px; position: relative; margin-bottom: 9px; color: var(--text-2); font-size: 14px; }
 .price-card li::before { content: "✓"; position: absolute; left: 0; color: var(--red); font-weight: 700; }
 .price-card .btn { padding: 11px 18px; font-size: 14.5px; }
+/* both products offered from the one card that says they're free */
+.price-card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.price-note { font-size: 12.5px; color: var(--text-2); margin-top: 12px; }
 .buy-steps { margin-top: 36px; padding-left: 20px; max-width: 640px; }
 .buy-steps li { margin-bottom: 8px; color: var(--text-2); }
 .buy-steps strong { color: var(--text); }
@@ -194,6 +206,10 @@ h2 { font-size: 32px; margin-bottom: 8px; }
 }
 .sj-card h3 { font-size: 16px; margin-bottom: 7px; }
 .sj-card p { color: var(--text-dim-on-dark); font-size: 13.5px; }
+/* a download where someone reading about SuperJob actually is, rather than only
+   at the bottom of the traffic section */
+.sj-cta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 26px; }
+.sj-cta .hero-version { color: var(--text-dim-on-dark); }
 
 /* ---- traffic plans ---- */
 .section-traffic { background: #E9EFF6; border-top: 3px solid var(--red); }
@@ -287,6 +303,9 @@ h2 { font-size: 32px; margin-bottom: 8px; }
   .section { padding: 56px 0; }
   .tap-cta { flex-direction: column; align-items: flex-start; }
   .beta-strip-inner { flex-direction: column; gap: 6px; }
+  .hero-dl { width: 100%; }
+  .hero-dl .btn { width: 100%; }
+  .price-card-actions { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {

@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://superbid.ca/">
 <link rel="icon" href="assets/favicon.ico">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -30,7 +30,9 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-red btn-small" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Free download</a>
+    <!-- Two products means the nav CTA can't be one product's download — it points
+         at the section that offers both. -->
+    <a class="btn btn-red btn-small" href="#pricing">Free downloads</a>
   </div>
 </header>
 
@@ -56,17 +58,25 @@
         <strong>SuperJob</strong> runs the job you won — daily logs, progress billing, and traffic
         accommodation plans drawn straight onto aerial imagery. Both keep everything in one file
         on your own machine.</p>
+        <!-- TWO products, so two download buttons. The static hrefs are real
+             releases/latest URLs, so these work with JavaScript off; site.js only
+             upgrades them to the direct .zip and stamps the version underneath. -->
         <div class="hero-actions">
-          <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">
-            Download SuperBid — free in beta
-          </a>
-          <!-- Deliberately NOT a [data-download] button: this one's job is to take you
-               into the SuperJob section to read about traffic plans. site.js would
-               otherwise rewrite its href to the zip and remove the only path into
-               the content the section exists to sell. -->
-          <a class="btn btn-ghost btn-big" href="#superjob">See SuperJob &amp; traffic plans →</a>
+          <div class="hero-dl">
+            <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">
+              Download SuperBid
+            </a>
+            <span class="hero-version" data-version="superbid">latest release</span>
+          </div>
+          <div class="hero-dl">
+            <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superjob-releases/releases/latest" data-download="superjob">
+              Download SuperJob
+            </a>
+            <span class="hero-version" data-version="superjob">beta release</span>
+          </div>
         </div>
-        <p class="hero-version" data-version="superbid">for Windows 10/11 (64-bit)</p>
+        <p class="hero-note">Both free while in beta — Windows 10 and 11, 64-bit.
+        <a href="#superjob">What SuperJob does →</a></p>
         <ul class="trust-strip">
           <li>Free while in beta</li>
           <li>Works offline</li>
@@ -186,6 +196,13 @@
           baseline the day-to-day can never quietly rewrite.</p>
         </div>
       </div>
+
+      <div class="sj-cta">
+        <a class="btn btn-red btn-big" href="https://github.com/lupulbraydon-ops/superjob-releases/releases/latest" data-download="superjob">
+          Download SuperJob — free in beta
+        </a>
+        <span class="hero-version" data-version="superjob">beta release</span>
+      </div>
     </div>
   </section>
 
@@ -267,10 +284,9 @@
           Traffic Plans tab, and draw your next closure.</p>
         </div>
         <div class="tap-cta-actions">
-          <a class="btn btn-red btn-big" data-download="superjob" data-pending
-             data-live-label="Download SuperJob beta"
-             href="mailto:sales@superbid.ca?subject=SuperJob%20beta%20access">Join the SuperJob beta</a>
-          <span class="hero-version" data-version="superjob">beta · Windows 10/11 (64-bit)</span>
+          <a class="btn btn-red btn-big" data-download="superjob"
+             href="https://github.com/lupulbraydon-ops/superjob-releases/releases/latest">Download SuperJob beta</a>
+          <span class="hero-version" data-version="superjob">beta release</span>
         </div>
       </div>
     </div>
@@ -330,7 +346,11 @@
             <li>Installing starts a 30-day trial; email once for free beta keys and both keep running</li>
             <li>Your files stay yours — .sbid and .sbjob always reopen</li>
           </ul>
-          <a class="btn btn-red" href="mailto:sales@superbid.ca?subject=Beta%20licence%20key">Get a free beta key</a>
+          <div class="price-card-actions">
+            <a class="btn btn-red" href="https://github.com/lupulbraydon-ops/superbid-releases/releases/latest" data-download="superbid">Download SuperBid</a>
+            <a class="btn btn-red" href="https://github.com/lupulbraydon-ops/superjob-releases/releases/latest" data-download="superjob">Download SuperJob</a>
+          </div>
+          <p class="price-note">Past 30 days? <a href="mailto:sales@superbid.ca?subject=Beta%20licence%20key">Email for free beta keys</a> — one per app, both against the same machine ID.</p>
         </div>
         <div class="price-card price-card-main">
           <h3>When beta ends</h3>
@@ -517,6 +537,6 @@
      [data-download] attribute, so a returning visitor holding it in cache while
      getting this newer HTML would have every SuperJob button pointed at SuperBid's
      zip. Bump this whenever site.js changes. -->
-<script src="site.js?v=2"></script>
+<script src="site.js?v=3"></script>
 </body>
 </html>

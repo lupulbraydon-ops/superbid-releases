@@ -26,9 +26,13 @@ Object.entries(FEEDS).forEach(async ([product, repo]) => {
       if (a.dataset.liveLabel) a.textContent = a.dataset.liveLabel;
       a.removeAttribute("data-pending");
     });
+    // Version + size only. The platform used to be appended here too, but these
+    // labels now sit under half-width buttons in the hero and the extra clause
+    // wrapped to a second line; "Windows 10 and 11, 64-bit" is stated once in the
+    // hero note instead.
     const mb = Math.round(asset.size / 1048576);
     document.querySelectorAll(`[data-version="${product}"]`).forEach(el => {
-      el.textContent = `${release.tag_name} · ${mb} MB · Windows 10/11 (64-bit)`;
+      el.textContent = `${release.tag_name} · ${mb} MB`;
     });
   } catch {
     // offline or rate-limited — the static links still work
